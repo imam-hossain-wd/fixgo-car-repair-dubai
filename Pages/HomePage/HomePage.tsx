@@ -1,3 +1,4 @@
+import CTA from "@/components/View/CTA/CTA";
 import FAQ from "@/components/View/FAQ/FAQ";
 import Hero from "@/components/View/Hero/Hero";
 import HowItWorks from "@/components/View/HowItWorks/HowItWorks";
@@ -17,6 +18,7 @@ export default function HomePage() {
             <WhyChooseUs />
             <LocationMap />
             <FAQ />
+            <CTA />
         </div>
     )
 }
