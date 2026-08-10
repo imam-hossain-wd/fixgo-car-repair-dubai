@@ -1,7 +1,6 @@
+import HomePage from "@/Pages/HomePage/HomePage";
+
+
 export default function Home() {
-  return (
-    <div>
-      <p>Welcome to Fixgo Car Repair Dubai</p>
-    </div>
-  );
+  return <HomePage />
 }
