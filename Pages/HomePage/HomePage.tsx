@@ -1,3 +1,4 @@
+import FAQ from "@/components/View/FAQ/FAQ";
 import Hero from "@/components/View/Hero/Hero";
 import HowItWorks from "@/components/View/HowItWorks/HowItWorks";
 import LocationMap from "@/components/View/LocationMap/LocationMap";
@@ -15,6 +16,7 @@ export default function HomePage() {
             <WhoWeAre />
             <WhyChooseUs />
             <LocationMap />
+            <FAQ />
         </div>
     )
 }
