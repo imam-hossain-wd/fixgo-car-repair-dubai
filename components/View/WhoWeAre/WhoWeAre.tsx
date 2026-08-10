@@ -72,7 +72,7 @@ const WhoWeAre = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 py-20 sm:py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 py-5">
       {/* Background Decorations */}
       <div className="absolute inset-0">
         <div className="absolute right-0 top-0 h-[700px] w-[700px] rounded-full bg-red-600/5 blur-3xl" />
