@@ -2,14 +2,11 @@
 
 import { 
   RiMapPinLine, 
-  RiCarLine, 
   RiCheckboxCircleLine,
   RiArrowRightLine,
   RiRoadsterLine,
   RiToolsLine,
-  RiShieldStarLine
 } from "@remixicon/react";
-import Link from "next/link";
 
 const HowItWorks = () => {
   const steps = [
@@ -63,10 +60,10 @@ const HowItWorks = () => {
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
+          {/* <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
             <RiToolsLine className="h-4 w-4" />
             Simple & Transparent Process
-          </div>
+          </div> */}
 
           <h2 className="mt-6 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             How It Works
@@ -104,10 +101,10 @@ const HowItWorks = () => {
 
                 {/* Content */}
                 <div className="relative z-10">
-                  <h3 className="text-xl font-bold text-white">
+                  <h3 className="text-lg font-bold text-white">
                     {step.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-neutral-400">
+                  <p className="mt-2 text-xs leading-relaxed text-neutral-400">
                     {step.description}
                   </p>
 
@@ -116,7 +113,7 @@ const HowItWorks = () => {
                     {step.details.map((detail) => (
                       <li
                         key={detail}
-                        className="flex items-center gap-2 text-sm text-neutral-400"
+                        className="flex items-center gap-2 text-xs text-neutral-400"
                       >
                         <span className="inline-block h-1.5 w-1.5 rounded-full bg-red-500" />
                         {detail}
@@ -137,31 +134,6 @@ const HowItWorks = () => {
               </div>
             );
           })}
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex flex-wrap items-center justify-center gap-6 rounded-2xl border border-white/5 bg-white/5 px-8 py-6 backdrop-blur-sm">
-            <div className="flex items-center gap-3">
-              <RiShieldStarLine className="h-6 w-6 text-emerald-400" />
-              <span className="text-sm text-neutral-300">
-                100% Satisfaction <span className="font-semibold text-white">Guaranteed</span>
-              </span>
-            </div>
-            <div className="hidden h-8 w-px bg-white/10 lg:block" />
-            <Link
-              href="/contact"
-              className="group inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-red-600 to-red-700 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-red-600/30 transition-all duration-300 hover:scale-105 hover:shadow-red-600/50"
-            >
-              <span>Get Started Now</span>
-              <RiArrowRightLine className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </Link>
-          </div>
-
-          <p className="mt-4 text-xs text-neutral-500">
-            ⏱️ Average response time: <span className="font-medium text-neutral-400">5-15 minutes</span> • 
-            Available 24/7 across all Dubai communities
-          </p>
         </div>
       </div>
     </section>

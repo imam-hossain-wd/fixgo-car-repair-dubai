@@ -10,9 +10,6 @@ import {
   RiVirusFill,
   RiSettings3Line,
   RiArrowRightLine,
-  RiSearchLine,
-  RiShieldCheckLine,
-  RiTimeLine,
 } from "@remixicon/react";
 import Link from "next/link";
 
@@ -122,10 +119,10 @@ const Services = () => {
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
+          {/* <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
             <RiSearchLine className="h-4 w-4" />
             Our Services
-          </div>
+          </div> */}
 
           <h2 className="mt-6 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Comprehensive Auto Repair
@@ -211,23 +208,6 @@ const Services = () => {
 
         {/* Bottom CTA - All Services Button */}
         <div className="mt-12 flex flex-col items-center justify-center gap-6">
-          {/* Trust Indicators */}
-          <div className="flex flex-wrap items-center justify-center gap-8">
-            <div className="flex items-center gap-2">
-              <RiShieldCheckLine className="h-5 w-5 text-emerald-400" />
-              <span className="text-sm text-neutral-400">Certified Mechanics</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <RiTimeLine className="h-5 w-5 text-emerald-400" />
-              <span className="text-sm text-neutral-400">5-15 Min Response</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-sm text-neutral-400">
-                ⭐ <span className="font-medium text-white">4.9/5</span> Rating
-              </span>
-            </div>
-          </div>
-
           <Link
             href="/services"
             className="group inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-red-600/30 transition-all duration-300 hover:scale-105 hover:shadow-red-600/50"
@@ -236,9 +216,9 @@ const Services = () => {
             <RiArrowRightLine className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
 
-          <p className="text-xs text-neutral-500">
+          {/* <p className="text-xs text-neutral-500">
             {services.length}+ specialized services available • Call us 24/7 for immediate assistance
-          </p>
+          </p> */}
         </div>
       </div>
     </section>

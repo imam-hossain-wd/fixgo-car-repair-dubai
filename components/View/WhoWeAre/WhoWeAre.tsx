@@ -1,5 +1,6 @@
 "use client";
 
+import { heroImages } from "@/utils/assets";
 import {
   RiAwardLine,
   RiCustomerService2Line,
@@ -83,10 +84,10 @@ const WhoWeAre = () => {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
+          {/* <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
             <RiAwardLine className="h-4 w-4" />
             About FixGo
-          </div>
+          </div> */}
 
           <h2 className="mt-6 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Who We Are
@@ -102,27 +103,27 @@ const WhoWeAre = () => {
           <div className="flex flex-col justify-center space-y-6">
             {/* Main Story */}
             <div className="rounded-2xl border border-white/5 bg-white/5 p-6 backdrop-blur-sm">
-              <p className="text-base leading-relaxed text-neutral-300">
-                <span className="font-semibold text-red-400">Founded in 2020</span>, 
-                FixGo Car Repair Dubai was built to solve a fundamental problem for 
-                motorists in the UAE: the delay, expense, and stress of traditional 
-                auto workshops. As a top-rated, 24/7 mobile car repair service, we 
-                operate as a fully equipped garage on wheels, bringing certified 
-                auto mechanics directly to your exact location—whether you are 
+              <p className="text-[15px] leading-relaxed text-neutral-300">
+                <span className="font-semibold text-red-400">Founded in 2020</span>,
+                FixGo Car Repair Dubai was built to solve a fundamental problem for
+                motorists in the UAE: the delay, expense, and stress of traditional
+                auto workshops. As a top-rated, 24/7 mobile car repair service, we
+                operate as a fully equipped garage on wheels, bringing certified
+                auto mechanics directly to your exact location—whether you are
                 stranded on the highway, parked at your office, or sitting at home.
               </p>
             </div>
 
             {/* Second Paragraph */}
             <div className="rounded-2xl border border-white/5 bg-white/5 p-6 backdrop-blur-sm">
-              <p className="text-base leading-relaxed text-neutral-300">
-                From quick battery replacements and jump starts to advanced computer 
-                diagnostics, AC gas refills, and complex mechanical repairs, our team 
+              <p className="text-[15px] leading-relaxed text-neutral-300">
+                From quick battery replacements and jump starts to advanced computer
+                diagnostics, AC gas refills, and complex mechanical repairs, our team
                 delivers complete auto care on the spot. Headquartered in{" "}
-                <span className="font-semibold text-white">Wadi Al Safa</span> and 
-                servicing every major district—including Dubailand, Business Bay, 
-                Downtown Dubai, and Jumeirah Village Circle—FixGo guarantees a rapid{" "}
-                <span className="font-semibold text-red-400">5-to-15-minute</span>{" "}
+                <span className="font-semibold text-white">Wadi Al Safa</span> and
+                servicing every major district—including Dubailand, Business Bay,
+                Downtown Dubai, and Jumeirah Village Circle FixGo guarantees a rapid{" "}
+                <span className="font-semibold text-red-400">5 to 15 minute</span>{" "}
                 response time.
               </p>
             </div>
@@ -152,47 +153,8 @@ const WhoWeAre = () => {
           <div className="flex flex-col space-y-6">
             {/* Main Image Card */}
             <div className="relative overflow-hidden rounded-2xl border border-white/5 bg-gradient-to-br from-neutral-800 to-neutral-900 shadow-2xl">
-              <div className="aspect-[4/3] w-full">
-                {/* Placeholder - Replace with actual image */}
-                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-neutral-700 to-neutral-800">
-                  <div className="text-center">
-                    <div className="text-6xl">🔧</div>
-                    <p className="mt-4 text-sm text-neutral-400">FixGo Mobile Workshop</p>
-                    <p className="text-xs text-neutral-500">Image Placeholder</p>
-                  </div>
-                </div>
 
-                {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/60 via-transparent to-transparent" />
-
-                {/* Floating Badge - Rating */}
-                <div className="absolute -bottom-4 -right-4 rounded-xl bg-neutral-900/90 p-4 backdrop-blur-md border border-white/10 shadow-xl">
-                  <div className="flex items-center gap-3">
-                    <div className="flex">
-                      {[1, 2, 3, 4, 5].map((star) => (
-                        <span key={star} className="text-yellow-400">★</span>
-                      ))}
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-white">4.9/5</p>
-                      <p className="text-xs text-neutral-400">Google Rating</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Floating Badge - Response Time */}
-                <div className="absolute -left-4 top-8 rounded-xl bg-neutral-900/90 p-4 backdrop-blur-md border border-white/10 shadow-xl">
-                  <div className="flex items-center gap-3">
-                    <div className="rounded-full bg-emerald-500/20 p-2">
-                      <RiTimeLine className="h-5 w-5 text-emerald-400" />
-                    </div>
-                    <div>
-                      <p className="text-xs text-neutral-400">Response Time</p>
-                      <p className="text-sm font-semibold text-white">5-15 Minutes</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Image className="border-2 rounded border- w-auto h-full" src={heroImages.hero2} width={500} height={300} quality={75} alt="Hero Banner" />
             </div>
 
             {/* Stats Grid */}
@@ -222,7 +184,7 @@ const WhoWeAre = () => {
         </div>
 
         {/* Core Values */}
-        <div className="mt-20">
+        <div className="mt-10">
           <div className="mx-auto max-w-3xl text-center">
             <h3 className="font-serif text-2xl font-bold text-white">
               Our Core Values
@@ -256,7 +218,7 @@ const WhoWeAre = () => {
         </div>
 
         {/* Trust Badge */}
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-8 rounded-2xl border border-white/5 bg-white/5 px-6 py-6 backdrop-blur-sm">
+        {/* <div className="mt-6 flex flex-wrap items-center justify-center gap-8 rounded-2xl border border-white/5 bg-white/5 px-6 py-6 backdrop-blur-sm">
           <div className="flex items-center gap-3">
             <RiShieldCheckLine className="h-5 w-5 text-emerald-400" />
             <span className="text-sm text-neutral-300">
@@ -283,7 +245,7 @@ const WhoWeAre = () => {
               ⭐ <span className="font-semibold text-white">4.9/5</span> Rating
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
