@@ -60,7 +60,7 @@ const LocationMap = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 py-20 sm:py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 py-5">
       {/* Background Decorations */}
       <div className="absolute inset-0">
         <div className="absolute right-1/4 top-1/3 h-[500px] w-[500px] rounded-full bg-red-600/5 blur-3xl" />
@@ -90,7 +90,7 @@ const LocationMap = () => {
         </div>
 
         {/* Location Features */}
-        <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        {/* <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {locationFeatures.map((feature) => {
             const Icon = feature.icon;
             return (
@@ -110,7 +110,7 @@ const LocationMap = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
 
         {/* Map & Location Details */}
         <div className="mt-16 grid gap-8 lg:grid-cols-3">
@@ -246,7 +246,7 @@ const LocationMap = () => {
               </div>
 
               {/* Service Areas Grid */}
-              <div className="rounded-2xl border border-white/5 bg-white/5 p-6 backdrop-blur-sm">
+              {/* <div className="rounded-2xl border border-white/5 bg-white/5 p-6 backdrop-blur-sm">
                 <div className="flex items-center justify-between">
                   <h4 className="text-sm font-semibold uppercase tracking-wider text-neutral-400">
                     Areas We Serve
@@ -277,7 +277,7 @@ const LocationMap = () => {
                   })}
                 </div>
 
-                {/* Coverage Note */}
+                
                 <div className="mt-4 flex items-center gap-2 rounded-lg bg-emerald-500/10 px-3 py-2">
                   <RiCheckboxCircleLine className="h-4 w-4 text-emerald-400" />
                   <p className="text-xs text-neutral-300">
@@ -285,7 +285,7 @@ const LocationMap = () => {
                     residential and commercial districts
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -328,7 +328,7 @@ const LocationMap = () => {
             </div>
           </div>
 
-          <Link
+          {/* <Link
             href={GMB.mapsLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -337,7 +337,7 @@ const LocationMap = () => {
             <RiRoadMapLine className="h-5 w-5" />
             <span>Get Directions to Our Location</span>
             <RiArrowRightLine className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>

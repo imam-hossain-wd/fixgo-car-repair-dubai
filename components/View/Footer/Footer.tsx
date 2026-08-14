@@ -42,6 +42,7 @@ const Footer = () => {
     serviceAreas,
     operatingHours,
     GMB,
+    services,
   } = SiteConfig;
 
   // Quick links from navItems (excluding Home and Blog)
@@ -51,7 +52,7 @@ const Footer = () => {
   const quickLinks = navItems.filter(item => item.name !== "Home" && item.name !== "Blog");
 
   // Popular services (first 6 from services)
-  const popularServices = SiteConfig.services.slice(0, 6);
+
 
   return (
     <footer className="relative overflow-hidden bg-neutral-950 border-t border-white/5">
@@ -123,7 +124,7 @@ const Footer = () => {
 
             {/* Social Links */}
             <div className="flex gap-2">
-              {socialLinks.map((social:any) => {
+              {socialLinks.map((social: any) => {
                 const Icon = social.icon;
                 if (!social.href) return null;
                 return (
@@ -152,13 +153,65 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
+
+          {/* Column 2: Our Services */}
+
+
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
+              Our Services
+            </h3>
+            <ul className="mt-4 space-y-2.5">
+              {services.map((service) => (
+                <li key={service.slug}>
+                  <Link
+                    href={`/services/${service.slug}`}
+                    className="group flex items-center gap-2 text-sm text-neutral-400 transition-colors hover:text-white"
+                  >
+                    <RiCarLine className="h-3 w-3 transition-colors group-hover:text-red-400" />
+                    <span>{service.name}</span>
+                  </Link>
+                </li>
+              ))}
+              {/* <li>
+                <Link
+                  href="/services"
+                  className="group flex items-center gap-2 text-sm font-medium text-red-400 transition-colors hover:text-red-300"
+                >
+                  <span>View All Services</span>
+                  <RiArrowRightLine className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+              </li> */}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
+              Service Areas
+            </h3>
+            <ul className="mt-4 space-y-2.5">
+              {serviceAreas.map((area) => (
+                <li key={area.slug}>
+                  <Link
+                    href={`/area-we-serve/${area.slug}`}
+                    className="group flex items-center gap-2 text-sm text-neutral-400 transition-colors hover:text-white"
+                  >
+                    <RiBuildingLine className="h-3 w-3 transition-colors group-hover:text-red-400" />
+                    <span>{area.name}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+        
+          {/* Column 4: Quick Links*/}
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
               Quick Links
             </h3>
             <ul className="mt-4 space-y-2.5">
-              {quickLinks.map((item:any) => (
+              {quickLinks.map((item: any) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
@@ -169,7 +222,7 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
-              {footerhrefs.map((item:any) => (
+              {footerhrefs.map((item: any) => (
                 <li key={item.title}>
                   <Link
                     href={item.href}
@@ -181,64 +234,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
 
-          {/* Column 3: Popular Services */}
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-              Popular Services
-            </h3>
-            <ul className="mt-4 space-y-2.5">
-              {popularServices.map((service) => (
-                <li key={service.slug}>
-                  <Link
-                    href={`/services/${service.slug}`}
-                    className="group flex items-center gap-2 text-sm text-neutral-400 transition-colors hover:text-white"
-                  >
-                    <RiCarLine className="h-3 w-3 transition-colors group-hover:text-red-400" />
-                    <span>{service.name}</span>
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link
-                  href="/services"
-                  className="group flex items-center gap-2 text-sm font-medium text-red-400 transition-colors hover:text-red-300"
-                >
-                  <span>View All Services</span>
-                  <RiArrowRightLine className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 4: Service Areas & Hours */}
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-              Service Areas
-            </h3>
-            <ul className="mt-4 space-y-2.5">
-              {serviceAreas.slice(0, 6).map((area) => (
-                <li key={area.slug}>
-                  <Link
-                    href={`/area-we-serve/${area.slug}`}
-                    className="group flex items-center gap-2 text-sm text-neutral-400 transition-colors hover:text-white"
-                  >
-                    <RiBuildingLine className="h-3 w-3 transition-colors group-hover:text-red-400" />
-                    <span>{area.name}</span>
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link
-                  href="/area-we-serve"
-                  className="group flex items-center gap-2 text-sm font-medium text-red-400 transition-colors hover:text-red-300"
-                >
-                  <span>View All Areas</span>
-                  <RiArrowRightLine className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
-                </Link>
-              </li>
-            </ul>
 
             {/* Operating Hours */}
             <div className="mt-6">
@@ -246,7 +242,7 @@ const Footer = () => {
                 Operating Hours
               </h4>
               <div className="mt-3 space-y-1">
-                {operatingHours.slice(0, 3).map((day) => (
+                {operatingHours.map((day) => (
                   <div
                     key={day.day}
                     className="flex items-center justify-between text-xs"
@@ -255,10 +251,6 @@ const Footer = () => {
                     <span className="text-emerald-400">{day.hours}</span>
                   </div>
                 ))}
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-neutral-500">...all days</span>
-                  <span className="text-emerald-400">24 Hours</span>
-                </div>
               </div>
             </div>
           </div>
@@ -272,33 +264,10 @@ const Footer = () => {
               © {currentYear} {brandName}. All rights reserved.
               <span className="mx-2 hidden sm:inline">|</span>
               <span className="block sm:inline">
-                Built with ❤️ in Dubai, UAE
+                Built with in Dubai, UAE
               </span>
             </div>
 
-            {/* Legal Links */}
-            <div className="flex flex-wrap items-center justify-center gap-4 text-xs">
-              <Link
-                href="/privacy"
-                className="text-neutral-500 transition-colors hover:text-neutral-300"
-              >
-                Privacy Policy
-              </Link>
-              <span className="text-neutral-700">|</span>
-              <Link
-                href="/terms"
-                className="text-neutral-500 transition-colors hover:text-neutral-300"
-              >
-                Terms of Service
-              </Link>
-              <span className="text-neutral-700">|</span>
-              <Link
-                href="/sitemap.xml"
-                className="text-neutral-500 transition-colors hover:text-neutral-300"
-              >
-                Sitemap
-              </Link>
-            </div>
 
             {/* Language / Region */}
             <div className="flex items-center gap-2 text-xs text-neutral-500">

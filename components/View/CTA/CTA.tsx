@@ -51,7 +51,7 @@ const CTA = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 py-20 sm:py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 py-5">
       {/* Background Decorations */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[url('/images/cta-bg-pattern.svg')] opacity-10" />
@@ -66,15 +66,15 @@ const CTA = () => {
           {/* Inner Glow */}
           <div className="absolute inset-0 bg-gradient-to-br from-red-600/5 via-transparent to-transparent" />
 
-          <div className="relative px-6 py-12 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
+          <div className="relative px-10 py-12">
             <div className="grid gap-12 lg:grid-cols-5 lg:gap-8">
               {/* Left Content */}
               <div className="lg:col-span-3">
                 {/* Badge */}
-                <div className="inline-flex items-center gap-2 rounded-full bg-red-500/20 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
+                {/* <div className="inline-flex items-center gap-2 rounded-full bg-red-500/20 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
                   <RiFlashlightLine className="h-4 w-4" />
                   <span>Available 24/7 • 5-15 Min Response</span>
-                </div>
+                </div> */}
 
                 {/* Heading */}
                 <h2 className="mt-6 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
@@ -91,7 +91,7 @@ const CTA = () => {
                 </p>
 
                 {/* Trust Indicators */}
-                <div className="mt-6 flex flex-wrap items-center gap-6">
+                {/* <div className="mt-6 flex flex-wrap items-center gap-6">
                   {trustIndicators.map((indicator) => {
                     const Icon = indicator.icon;
                     return (
@@ -110,10 +110,10 @@ const CTA = () => {
                       </div>
                     );
                   })}
-                </div>
+                </div> */}
 
                 {/* Highlights Grid */}
-                <div className="mt-8 grid grid-cols-2 gap-2 sm:grid-cols-3">
+                {/* <div className="mt-8 grid grid-cols-2 gap-2 sm:grid-cols-3">
                   {highlights.map((highlight) => (
                     <div
                       key={highlight}
@@ -125,7 +125,7 @@ const CTA = () => {
                       </span>
                     </div>
                   ))}
-                </div>
+                </div> */}
               </div>
 
               {/* Right Content - Action Buttons */}
@@ -222,7 +222,7 @@ const CTA = () => {
         </div>
 
         {/* Emergency Note */}
-        <div className="mt-6 text-center">
+        {/* <div className="mt-6 text-center">
           <p className="text-xs text-neutral-500">
             ⚡ Emergency? Call us now at{" "}
             <Link
@@ -233,7 +233,7 @@ const CTA = () => {
             </Link>
             {" "}• Available 24/7/365
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );
