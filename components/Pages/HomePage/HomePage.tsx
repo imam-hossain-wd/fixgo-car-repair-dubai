@@ -9,6 +9,7 @@ import WhoWeAre from "@/components/View/WhoWeAre/WhoWeAre";
 import WhyChooseUs from "@/components/View/WhyChooseUs/WhyChooseUs";
 
 
+
 export default function HomePage() {
     return (
         <div>
