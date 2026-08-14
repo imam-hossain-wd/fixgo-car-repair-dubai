@@ -1,6 +1,8 @@
 "use client";
 
-import { RiArrowRightLine, RiFlashlightFill, RiShieldCheckLine, RiTimeLine, RiWhatsappLine } from "@remixicon/react";
+import { heroImages } from "@/utils/assets";
+import { RiArrowRightLine, RiFlashlightFill, RiTimeLine, RiWhatsappLine } from "@remixicon/react";
+import Image from "next/image";
 import Link from "next/link";
 
 // We'll use placeholder images - you'll replace with actual images
@@ -18,11 +20,11 @@ const Hero = () => {
       <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-orange-600/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid min-h-[100vh] grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="grid h-auto grid-cols-1 items-center gap-12 lg:grid-cols-2 ">
           {/* Left Content */}
-          <div className="flex flex-col justify-center space-y-8 py-12 lg:py-0">
+          <div className="flex flex-col justify-center space-y-8 py-8">
             {/* Trust Badge */}
-            <div className="flex items-center gap-3">
+            {/* <div className="flex items-center gap-3">
               <span className="inline-flex items-center gap-2 rounded-full bg-emerald-500/20 px-4 py-2 text-sm font-medium text-emerald-400 backdrop-blur-sm">
                 <span className="relative flex h-2 w-2">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
@@ -30,7 +32,7 @@ const Hero = () => {
                 </span>
                 Available 24/7 • 5-15 Min Response
               </span>
-            </div>
+            </div> */}
 
             {/* Main Heading */}
             <div className="space-y-4">
@@ -115,21 +117,23 @@ const Hero = () => {
           <div className="relative flex items-center justify-center lg:justify-end">
             {/* Main Image Container */}
             <div className="relative w-full max-w-lg">
-              <div className="relative aspect-4/3 overflow-hidden rounded-2xl bg-linear-to-br from-neutral-800 to-neutral-900 shadow-2xl">
-                {/* Placeholder - Replace with actual image */}
+              <div className="relative aspect-4/3 overflow-hidden rounded-2xl">
+                
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
+
+                  <Image className="border-2 rounded border- w-auto h-full" src={heroImages.hero} width={500} height={300} quality={75} alt="Hero Banner"/>
+                  {/* <div className="text-center">
                     <div className="text-6xl mb-4">🔧</div>
                     <p className="text-sm text-neutral-400">Mobile Repair Service</p>
-                    <p className="text-xs text-neutral-500 mt-1">Image Placeholder</p>
-                  </div>
+                    
+                  </div> */}
                 </div>
 
-                {/* Overlay Gradient */}
+                
                 <div className="absolute inset-0 bg-linear-to-t from-neutral-950/50 via-transparent to-transparent" />
 
-                {/* Floating Card - Response Time */}
-                <div className="absolute -bottom-6 -left-6 rounded-xl bg-neutral-900/90 p-4 backdrop-blur-md border border-white/10 shadow-xl">
+            
+                <div className="absolute bottom-2 left-2 rounded-xl bg-neutral-900/90 p-4 backdrop-blur-md border border-white/10 shadow-xl">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-emerald-500/20 p-2">
                       <RiTimeLine className="h-5 w-5 text-emerald-400" />
@@ -141,8 +145,8 @@ const Hero = () => {
                   </div>
                 </div>
 
-                {/* Floating Card - Rating */}
-                <div className="absolute -right-4 top-8 rounded-xl bg-neutral-900/90 p-4 backdrop-blur-md border border-white/10 shadow-xl">
+  
+                <div className="absolute right-2 top-8 rounded-xl bg-neutral-900/90 p-4 backdrop-blur-md border border-white/10 shadow-xl">
                   <div className="flex items-center gap-2">
                     <div className="flex">
                       {[1, 2, 3, 4, 5].map((star) => (
@@ -154,8 +158,8 @@ const Hero = () => {
                   <p className="text-xs text-neutral-400">Rating on Google</p>
                 </div>
 
-                {/* Floating Card - 24/7 */}
-                <div className="absolute -bottom-6 -right-6 rounded-xl bg-neutral-900/90 p-4 backdrop-blur-md border border-white/10 shadow-xl">
+
+                <div className="absolute bottom-2 right-2 rounded-xl bg-neutral-900/90 p-4 backdrop-blur-md border border-white/10 shadow-xl">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-red-500/20 p-2">
                       <RiFlashlightFill className="h-5 w-5 text-red-400" />
@@ -168,6 +172,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
+            {/* <Image className="border-2 rounded border-" src={heroImages.hero} width={500} height={300} quality={75} alt="Hero Banner"/> */}
           </div>
         </div>
       </div>
