@@ -1,6 +1,7 @@
 import CTA from "@/components/View/CTA/CTA";
 import FAQ from "@/components/View/FAQ/FAQ";
 import Footer from "@/components/View/Footer/Footer";
+import Gallery from "@/components/View/Gallery/Gallery";
 import Hero from "@/components/View/Hero/Hero";
 import HowItWorks from "@/components/View/HowItWorks/HowItWorks";
 import LocationMap from "@/components/View/LocationMap/LocationMap";
@@ -16,6 +17,7 @@ export default function HomePage() {
             <Hero />
             <HowItWorks />
             <Services />
+            <Gallery />
             <WhoWeAre />
             <WhyChooseUs />
             <LocationMap />
