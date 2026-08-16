@@ -7,6 +7,8 @@ export const SiteConfig = {
     email: "fixgocarrepair@gmail.com",
     description: "FixGo Car Repair Dubai delivers 24/7 fast, reliable mobile car repair and emergency roadside assistance anywhere in Dubai within 5 to 15 minutes. Our certified mobile mechanics come directly to your home, office, or breakdown location with transparent pricing, advanced diagnostics, and guaranteed work.",
     displayNumber: "+971 54 144 6338",
+    ogImage:"/",
+    foundedYear:"2020",
     phoneNumber: "+971541446338",
     numberCallLink: "tel:+971541446338",
     whatsappCallLink: "https://wa.me/971541446338",
