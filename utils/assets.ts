@@ -55,6 +55,9 @@ import fuelPump from "../assets/service-banner/car-fuel-pump.jpg"
 import windowMotor from "../assets/service-banner/car-window-motor.png"
 // ---------------------------------------------
 
+// brand logo
+import logo from "../assets/logo/transparent-logo.png"
+
 export const heroImages = {
     hero , 
     hero2
@@ -62,6 +65,10 @@ export const heroImages = {
 
 export const projects = {
     one, two, three, four, five, six, seven, eight, nine
+}
+
+export const brandLogo = {
+    logo
 }
 
 

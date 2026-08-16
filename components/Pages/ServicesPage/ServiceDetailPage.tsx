@@ -1,39 +1,37 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
+
 import {
     RiArrowRightLine,
     RiCheckboxCircleLine,
     RiTimeLine,
     RiShieldCheckLine,
-    RiPriceTag3Line,
-    RiMapPinLine,
     RiPhoneLine,
     RiWhatsappLine,
     RiStarLine,
     RiCustomerService2Line,
     RiToolsLine,
     RiCarLine,
-    RiSettings3Line,
     RiFlashlightLine,
     RiAwardLine,
     RiThumbUpLine,
 } from "@remixicon/react";
 import { services } from "@/data/services/services";
 import { SiteConfig } from "@/config/siteConfig";
+import Image from "next/image";
 
 
 
-// Generate static params for all services
-export async function generateStaticParams() {
-    return services.map((service) => ({
-        slug: service.slug,
-    }));
+
+
+interface ServiceDetailPageProps {
+    service: any;
+    slug?: string;
 }
 
-export default function ServiceDetailPage(service:any, slug:string) {
+
+export default function ServiceDetailPage({ service, slug }: ServiceDetailPageProps) {
 
 
     const { displayNumber, numberCallLink, whatsappCallLink } = SiteConfig;
@@ -99,10 +97,10 @@ export default function ServiceDetailPage(service:any, slug:string) {
             </div>
 
             {/* Hero Section */}
-            <section className="relative overflow-hidden py-12 sm:py-16 lg:py-20">
+            <section className="relative overflow-hidden py-12">
                 <div className="absolute inset-0">
-                    <div className="absolute right-1/4 top-1/3 h-[500px] w-[500px] rounded-full bg-red-600/10 blur-3xl" />
-                    <div className="absolute bottom-1/3 left-1/4 h-[400px] w-[400px] rounded-full bg-orange-600/10 blur-3xl" />
+                    <div className="absolute right-1/4 top-1/3 h-125 w-125 rounded-full bg-red-600/10 blur-3xl" />
+                    <div className="absolute bottom-1/3 left-1/4 h-100 w-100 rounded-full bg-orange-600/10 blur-3xl" />
                 </div>
 
                 <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -171,45 +169,12 @@ export default function ServiceDetailPage(service:any, slug:string) {
                         {/* Right Content - Image */}
                         <div className="relative">
                             <div className="relative overflow-hidden rounded-2xl border border-white/5 bg-gradient-to-br from-neutral-800 to-neutral-900 shadow-2xl">
-                                <div className="aspect-[4/3] w-full">
-                                    {/* Service Image */}
-                                    <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-neutral-700 to-neutral-800">
-                                        <div className="text-center">
-                                            <div className="text-6xl">🔧</div>
-                                            <p className="mt-4 text-sm text-neutral-400">{name}</p>
-                                            <p className="text-xs text-neutral-500">Mobile Service</p>
-                                        </div>
-                                    </div>
+                                <div className="aspect-[4/3] w-full border-2 ">
+                                      <Image className="w-full h-full rounded" src={service_banner}  width={1000} height={1000} quality={75}  alt="fix go car repair logo"/>
 
                                     {/* Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/60 via-transparent to-transparent" />
+                                    {/* <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/60 via-transparent to-transparent" /> */}
 
-                                    {/* Floating Badges */}
-                                    <div className="absolute -bottom-4 -right-4 rounded-xl bg-neutral-900/90 p-4 backdrop-blur-md border border-white/10 shadow-xl">
-                                        <div className="flex items-center gap-3">
-                                            <div className="flex">
-                                                {[1, 2, 3, 4, 5].map((star) => (
-                                                    <span key={star} className="text-yellow-400">★</span>
-                                                ))}
-                                            </div>
-                                            <div>
-                                                <p className="text-sm font-semibold text-white">4.9/5</p>
-                                                <p className="text-xs text-neutral-400">Google Rating</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="absolute -left-4 top-8 rounded-xl bg-neutral-900/90 p-4 backdrop-blur-md border border-white/10 shadow-xl">
-                                        <div className="flex items-center gap-3">
-                                            <div className="rounded-full bg-emerald-500/20 p-2">
-                                                <RiTimeLine className="h-5 w-5 text-emerald-400" />
-                                            </div>
-                                            <div>
-                                                <p className="text-xs text-neutral-400">Response Time</p>
-                                                <p className="text-sm font-semibold text-white">5-15 Minutes</p>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>

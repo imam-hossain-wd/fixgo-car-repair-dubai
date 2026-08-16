@@ -173,7 +173,7 @@ export default function AreaWeServePage() {
   });
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 py-20 sm:py-24 lg:py-32">
+    <main className="min-h-screen bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 py-10">
       {/* Background Decorations */}
       <div className="absolute inset-0">
         <div className="absolute left-1/4 top-1/3 h-[600px] w-[600px] rounded-full bg-red-600/5 blur-3xl" />
@@ -184,10 +184,6 @@ export default function AreaWeServePage() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Page Header */}
         <div className="mx-auto max-w-4xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
-            <RiMapPinLine className="h-4 w-4" />
-            Service Coverage
-          </div>
 
           <h1 className="mt-6 font-serif text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             Areas We Serve

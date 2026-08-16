@@ -23,6 +23,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { SiteConfig } from "@/config/siteConfig";
+import { brandLogo } from "@/utils/assets";
 
 
 const Footer = () => {
@@ -68,15 +69,13 @@ const Footer = () => {
           {/* Column 1: Brand Info */}
           <div className="space-y-6">
             {/* Logo/Brand */}
-            <Link href="/" className="inline-block">
-              <span className="font-serif text-2xl font-bold text-white">
-                Fix<span className="text-red-500">Go</span>
-              </span>
-              <span className="ml-2 text-xs text-neutral-500">Car Repair</span>
+            <Link href="/" className="inline-block bg-white px-6 py-2 ">
+                <Image  width={180} height={180} quality={75} src={brandLogo?.logo} alt="fix go car repair logo"/>
             </Link>
 
             <p className="text-sm leading-relaxed text-neutral-400">
-              {description.substring(0, 120)}...
+              {description}
+              {/* {description.substring(0, 120)}... */}
             </p>
 
             {/* Trust Badges */}

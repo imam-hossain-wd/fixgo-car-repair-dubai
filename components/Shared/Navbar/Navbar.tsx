@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SiteConfig } from "@/config/siteConfig";
+import Image from "next/image";
+import { brandLogo } from "@/utils/assets";
 
 
 const Navbar = () => {
@@ -60,12 +62,13 @@ const Navbar = () => {
                         {/* Logo */}
                         <Link
                             href="/"
-                            className="flex items-center gap-2 font-serif text-2xl font-bold text-white transition-colors hover:text-red-400 lg:text-3xl"
+                            className="flex items-center gap-2 font-serif text-2xl font-bold text-white bg-white px-4 py-1 transition-colors hover:text-red-400 lg:text-3xl"
                         >
-                            Fix<span className="text-red-500">Go</span>
-                            <span className="hidden text-sm font-sans font-medium text-neutral-400 lg:inline-block">
+                            {/* Fix<span className="text-red-500">Go</span> */}
+                              <Image  width={110} height={110} quality={75} src={brandLogo?.logo} alt="fix go car repair logo"/>
+                            {/* <span className="hidden text-sm font-sans font-medium text-neutral-400 lg:inline-block">
                                 Car Repair Dubai
-                            </span>
+                            </span> */}
                         </Link>
 
                         {/* Desktop Navigation */}
@@ -182,7 +185,8 @@ const Navbar = () => {
                                 className="font-serif text-2xl font-bold text-white"
                                 onClick={() => setIsOpen(false)}
                             >
-                                Fix<span className="text-red-500">Go</span>
+                                {/* Fix<span className="text-red-500">Go</span> */}
+                                <Image width={100} height={100} quality={75} src={brandLogo?.logo} alt="fix go car repair logo"/>
                             </Link>
                             <button
                                 onClick={() => setIsOpen(false)}

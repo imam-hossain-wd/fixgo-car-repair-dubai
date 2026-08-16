@@ -146,7 +146,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950">
       {/* Hero Section */}
-      <section className="relative overflow-hidden border-b border-white/5 py-16 sm:py-20 lg:py-24">
+      <section className="relative overflow-hidden border-b border-white/5 py-10">
         <div className="absolute inset-0">
           <div className="absolute right-1/3 top-1/3 h-[500px] w-[500px] rounded-full bg-red-600/5 blur-3xl" />
           <div className="absolute bottom-1/3 left-1/3 h-[400px] w-[400px] rounded-full bg-orange-600/5 blur-3xl" />
@@ -154,11 +154,6 @@ export default function ContactPage() {
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
-              <RiCustomerService2Line className="h-4 w-4" />
-              Get in Touch
-            </div>
-
             <h1 className="mt-6 font-serif text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               Contact FixGo
               <span className="block bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">

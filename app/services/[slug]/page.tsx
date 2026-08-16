@@ -5,6 +5,7 @@ import ServiceDetailPage from '@/components/Pages/ServicesPage/ServiceDetailPage
 
 
 
+
 // Dynamic metadata for SEO
 export async function generateMetadata({
     params }: { params: Promise<{ slug: string }> }) {
