@@ -11,6 +11,8 @@ import WhyChooseUs from "@/components/View/WhyChooseUs/WhyChooseUs";
 
 
 export default function HomePage() {
+
+   
     return (
         <div>
             <Hero />

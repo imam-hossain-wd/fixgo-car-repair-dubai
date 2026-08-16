@@ -5,6 +5,7 @@ import { RiArrowRightLine, RiFlashlightFill, RiTimeLine, RiWhatsappLine } from "
 import Image from "next/image";
 import Link from "next/link";
 
+
 // We'll use placeholder images - you'll replace with actual images
 const Hero = () => {
   return (
