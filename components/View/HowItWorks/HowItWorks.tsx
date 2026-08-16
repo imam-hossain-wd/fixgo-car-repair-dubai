@@ -9,6 +9,8 @@ import {
 } from "@remixicon/react";
 
 const HowItWorks = () => {
+
+
   const steps = [
     {
       number: "01",
