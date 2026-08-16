@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter, Noto_Serif } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Shared/Navbar/Navbar";
+import Footer from "@/components/View/Footer/Footer";
 
 const notoSerif = Noto_Serif({ subsets: ['latin'], variable: '--font-serif' });
 
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <body className="min-h-full flex flex-col">
           {children}
         </body>
+        <Footer />
       </main>
     </html>
   );
