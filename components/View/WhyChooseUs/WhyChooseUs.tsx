@@ -111,13 +111,13 @@ const WhyChooseUs = () => {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
+          {/* <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
             <RiMedalLine className="h-4 w-4" />
             Why Choose FixGo
-          </div>
+          </div> */}
 
           <h2 className="mt-6 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Why FixGo Is
+            Why AutoFast Is
             <span className="block bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
               Dubai&lsquo;s Trusted Choice
             </span>
@@ -130,7 +130,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Key Metrics - Quick Stats */}
-        <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {metrics.map((metric) => {
             const Icon = metric.icon;
             return (
@@ -156,7 +156,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Reasons Grid */}
-        <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {reasons.map((reason) => {
             const Icon = reason.icon;
             return (
@@ -213,7 +213,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Bottom CTA with Additional Trust Signals */}
-        <div className="mt-16">
+        <div className="mt-8">
           <div className="rounded-2xl border border-white/5 bg-gradient-to-br from-white/5 to-transparent p-8 backdrop-blur-sm">
             <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
               {/* Left - Trust Signals */}

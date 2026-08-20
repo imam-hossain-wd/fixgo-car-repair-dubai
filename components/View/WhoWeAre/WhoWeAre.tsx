@@ -84,10 +84,6 @@ const WhoWeAre = () => {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center">
-          {/* <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
-            <RiAwardLine className="h-4 w-4" />
-            About FixGo
-          </div> */}
 
           <h2 className="mt-6 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Who We Are
@@ -98,19 +94,21 @@ const WhoWeAre = () => {
         </div>
 
         {/* Content Grid */}
-        <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="mt-10 grid gap-5 lg:grid-cols-2 lg:gap-10">
           {/* Left Column - Text Content */}
           <div className="flex flex-col justify-center space-y-6">
             {/* Main Story */}
             <div className="rounded-2xl border border-white/5 bg-white/5 p-6 backdrop-blur-sm">
               <p className="text-[15px] leading-relaxed text-neutral-300">
-                <span className="font-semibold text-red-400">Founded in 2020</span>,
-                AutoFix Car Repair Mobile Mechanic Dubai was built to solve a fundamental problem for
+                <span className="font-semibold text-red-400">Founded in 2020, </span>
+                {/* AutoFix Car Repair Mobile Mechanic Dubai was built to solve a fundamental problem for
                 motorists in the UAE: the delay, expense, and stress of traditional
                 auto workshops. As a top-rated, 24/7 mobile car repair service, we
                 operate as a fully equipped garage on wheels, bringing certified
                 auto mechanics directly to your exact location—whether you are
-                stranded on the highway, parked at your office, or sitting at home.
+                stranded on the highway, parked at your office, or sitting at home. */}
+
+                   AutoFast Car Repair Mobile Mechanic was built to solve a problem every Dubai driver knows well: the time, expense, and stress of traditional auto workshops. As a top-rated, 24/7 mobile car repair service, we operate as a fully equipped garage on wheels, sending certified mechanics directly to your exact location whether you're stranded on the highway, parked at the office, or waiting at home.
               </p>
             </div>
 
@@ -120,8 +118,8 @@ const WhoWeAre = () => {
                 From quick battery replacements and jump starts to advanced computer
                 diagnostics, AC gas refills, and complex mechanical repairs, our team
                 delivers complete auto care on the spot. Headquartered in{" "}
-                <span className="font-semibold text-white">Wadi Al Safa</span> and
-                servicing every major district—including Dubailand, Business Bay,
+                <span className="font-semibold text-white">19A Street Wadi Al Safa</span> and
+                servicing every major district including Dubailand, Business Bay,
                 Downtown Dubai, and Jumeirah Village Circle FixGo guarantees a rapid{" "}
                 <span className="font-semibold text-red-400">5 to 15 minute</span>{" "}
                 response time.
@@ -131,10 +129,10 @@ const WhoWeAre = () => {
             {/* Location Badge */}
             <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-sm">
               <div className="rounded-full bg-red-500/20 p-2">
-                <RiMapPinLine className="h-5 w-5 text-red-400" />
+                <RiMapPinLine className="h-5 w-5 text-white" />
               </div>
               <div>
-                <p className="text-sm font-medium text-white">Headquartered in Wadi Al Safa</p>
+                <p className="text-sm font-medium text-white"> Headquartered in 19A Street , Wadi Al Safa</p>
                 <p className="text-xs text-neutral-400">Serving all Dubai communities</p>
               </div>
             </div>
@@ -154,7 +152,7 @@ const WhoWeAre = () => {
             {/* Main Image Card */}
             <div className="relative overflow-hidden rounded-2xl border border-white/5 bg-gradient-to-br from-neutral-800 to-neutral-900 shadow-2xl">
 
-              <Image className="border-2 rounded border- w-auto h-full" src={heroImages.hero2} width={500} height={300} quality={75} alt="Hero Banner" />
+              <Image className="border-2 rounded border- w-full h-90" src={heroImages.hero2} width={500} height={300} quality={75} alt="Hero Banner" />
             </div>
 
             {/* Stats Grid */}
@@ -168,7 +166,7 @@ const WhoWeAre = () => {
                   >
                     <div className="flex items-start gap-3">
                       <div className="rounded-lg bg-gradient-to-br from-red-600/20 to-red-700/20 p-2">
-                        <Icon className="h-4 w-4 text-red-400" />
+                        <Icon className="h-4 w-4 text-white" />
                       </div>
                       <div>
                         <p className="text-xl font-bold text-white">{stat.value}</p>

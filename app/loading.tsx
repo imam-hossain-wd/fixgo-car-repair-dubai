@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 flex items-center justify-center">
+    <div className="min-h-screen bg-linear-to-b from-neutral-950 via-neutral-900 to-neutral-950 flex items-center justify-center">
       <div className="flex flex-col items-center gap-4">
         {/* Spinner */}
         <div className="relative h-12 w-12">
@@ -11,9 +11,9 @@ export default function Loading() {
         {/* Brand Name */}
         <div className="flex items-center gap-1">
           <span className="font-serif text-2xl font-bold text-white">
-            Fix<span className="text-red-500">Go</span>
+            Auto<span className="text-red-500">Fast</span>
           </span>
-          <span className="text-sm text-neutral-500">Car Repair</span>
+          {/* <span className="text-sm text-neutral-500">Car Repair</span> */}
         </div>
 
         {/* Loading Text */}

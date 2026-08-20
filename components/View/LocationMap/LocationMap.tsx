@@ -71,14 +71,9 @@ const LocationMap = () => {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
-            <RiMapPinLine className="h-4 w-4" />
-            Our Location & Service Areas
-          </div>
-
           <h2 className="mt-6 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             We Serve All of
-            <span className="block bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
               Dubai Communities
             </span>
           </h2>
@@ -113,7 +108,7 @@ const LocationMap = () => {
         </div> */}
 
         {/* Map & Location Details */}
-        <div className="mt-16 grid gap-8 lg:grid-cols-3">
+        <div className="mt-10 grid gap-8 lg:grid-cols-3">
           {/* Left: Location Details */}
           <div className="lg:col-span-1">
             <div className="flex h-full flex-col space-y-4">
@@ -291,7 +286,7 @@ const LocationMap = () => {
         </div>
 
         {/* Bottom Navigation CTA */}
-        <div className="mt-16 flex flex-col items-center justify-center gap-6 rounded-2xl border border-white/5 bg-gradient-to-br from-white/5 to-transparent p-8 backdrop-blur-sm">
+        <div className="mt-10 flex flex-col items-center justify-center gap-6 rounded-2xl border border-white/5 bg-gradient-to-br from-white/5 to-transparent p-8 backdrop-blur-sm">
           <div className="flex flex-wrap items-center justify-center gap-8">
             <div className="flex items-center gap-3">
               <div className="rounded-full bg-red-500/20 p-2">

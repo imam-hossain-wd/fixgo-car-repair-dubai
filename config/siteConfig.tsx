@@ -1,13 +1,13 @@
-import { RiFacebookCircleFill, RiInstagramFill, RiMailLine, RiMapPinLine, RiPhoneLine, RiPinterestFill, RiYoutubeFill } from "@remixicon/react";
+import { RiFacebookCircleFill, RiInstagramFill, RiMailLine, RiMapPinLine, RiPhoneLine, RiPinterestFill, RiTwitterXFill, RiYoutubeFill } from "@remixicon/react";
 
 export const SiteConfig = {
     authorName: "Md Alamgir",
-    brandName: "AutoFast Mobile Car Repair Dubai",
+    brandName: "AutoFast Car Repair Mobile Mechanic",
     url: "https://www.autofastcarrepairdubai.com/",
     email: "autofastcarrepair@gmail.com",
-    description: "AutoFast Mobile Car Repair Dubai delivers 24/7 fast, reliable mobile car repair and emergency roadside assistance anywhere in Dubai within 5 to 15 minutes. Our certified mobile mechanics come directly to your home, office, or breakdown location with transparent pricing, advanced diagnostics, and guaranteed work.",
+    description: "AutoFast Car Repair Mobile Mechanic brings certified auto technicians straight to your doorstep, anywhere in Dubai. We save drivers time, money, and towing fees by fixing vehicles exactly where they're parked — at home, at work, or on the roadside. Our mobile mechanics handle battery replacement, jump-starts, brake repairs, computer diagnostics, AC inspection, and emergency roadside assistance, completing over 90% of repairs on-site. With transparent pricing, zero hidden fees, and no unnecessary upsells, we deliver honest, workshop-grade service across Dubailand, Business Bay, Downtown Dubai, Al Quoz, Deira, and beyond — available 24/7, whenever you need us.",
     displayNumber: "+971 54 144 6338",
-    ogImage:"/",
+    ogImage:"/ogImage.png",
     foundedYear:"2020",
     phoneNumber: "+971541446338",
     numberCallLink: "tel:+971541446338",
@@ -166,7 +166,7 @@ export const SiteConfig = {
         { name: "Areas We Serve", href: "/area-we-serve" },
         { name: "About", href: "/about" },
         { name: "Contact", href: "/contact" },
-        { name: "Blog", href: "/blog" },
+        // { name: "Blog", href: "/blog" },
     ],
 
     footerhrefs: [
@@ -179,16 +179,17 @@ export const SiteConfig = {
     ],
 
     socialLinks: [
-        { name: "Facebook", icon: RiFacebookCircleFill, href: "https://www.facebook.com/autofixcarrepairdubai/" },
-        { name: "Instagram", icon: RiInstagramFill, href: "https://www.instagram.com/autofixcarrepairdubai/" },
-        { name: "Pinterest", icon: RiPinterestFill, href: "https://www.pinterest.com/fixgocarrepair/" },
-        { name: "YouTube", icon: RiYoutubeFill, href: "https://www.youtube.com/@autofixcarrepairdubai" }
+        { name: "Facebook", icon: RiFacebookCircleFill, href: "https://www.facebook.com/autofastcarrepairdubai/" },
+        { name: "Instagram", icon: RiInstagramFill, href: "https://www.instagram.com/autofastcarrepairdubai/" },
+        { name: "Pinterest", icon: RiPinterestFill, href: "https://www.pinterest.com/autofastcarrepairdubai/" },
+        { name: "YouTube", icon: RiYoutubeFill, href: "https://www.youtube.com/@autofixcarrepairdubai" },
+        { name: "Twitter", icon: RiTwitterXFill, href: "https://x.com/autofastrepair" },
     ],
 
     contactLinks: [
         { name: "Map", icon: RiMapPinLine, href: "" },
-        { name: "Phone", icon: RiPhoneLine, href: "tel:+" },
-        { name: "Email", icon: RiMailLine, href: "mailto:autofixcarrepair@gmail.com" }
+        { name: "Phone", icon: RiPhoneLine, href: "tel:+971541446338" },
+        { name: "Email", icon: RiMailLine, href: "mailto:autofastcarrepair@gmail.com" }
     ]
 };
 

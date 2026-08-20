@@ -107,25 +107,20 @@ const FAQ = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 py-5">
+    <section className="relative overflow-hidden bg-linear-to-b from-neutral-950 via-neutral-900 to-neutral-950 py-5">
       {/* Background Decorations */}
       <div className="absolute inset-0">
-        <div className="absolute left-1/4 top-1/3 h-[600px] w-[600px] rounded-full bg-red-600/5 blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/3 h-[500px] w-[500px] rounded-full bg-orange-600/5 blur-3xl" />
+        <div className="absolute left-1/4 top-1/3 h-150 w-150 rounded-full bg-red-600/5 blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/3 h-125 w-125 rounded-full bg-orange-600/5 blur-3xl" />
         <div className="absolute inset-0 bg-[url('/images/faq-pattern.svg')] opacity-5" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-2 text-sm font-medium text-red-400 backdrop-blur-sm">
-            <RiQuestionLine className="h-4 w-4" />
-            Frequently Asked Questions
-          </div>
-
-          <h2 className="mt-6 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+          <h2 className="mt-4 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Got Questions?
-            <span className="block bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
               We&lsquo;ve Got Answers
             </span>
           </h2>

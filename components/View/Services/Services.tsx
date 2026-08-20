@@ -11,11 +11,11 @@ const FeatureServices = () => {
   const featuredServices = services.slice(0, 8);
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 py-5">
+    <section className="relative overflow-hidden bg-linear-to-b from-neutral-950 via-neutral-900 to-neutral-950 py-5">
       {/* Background Decorations */}
       <div className="absolute inset-0">
-        <div className="absolute left-1/4 top-1/3 h-[600px] w-[600px] rounded-full bg-red-600/5 blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 h-[500px] w-[500px] rounded-full bg-orange-600/5 blur-3xl" />
+        <div className="absolute left-1/4 top-1/3 h-150 w-150 rounded-full bg-red-600/5 blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 h-125 w-125 rounded-full bg-orange-600/5 blur-3xl" />
         <div className="absolute inset-0 bg-[url('/images/services-pattern.svg')] opacity-5" />
       </div>
 
@@ -24,7 +24,7 @@ const FeatureServices = () => {
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mt-6 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Comprehensive Auto Repair
-            <span className="block bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
               At Your Doorstep
             </span>
           </h2>
@@ -90,15 +90,15 @@ const FeatureServices = () => {
 
           <Link
             href="/services"
-            className="group inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-red-600/30 transition-all duration-300 hover:scale-105 hover:shadow-red-600/50"
+            className="group inline-flex items-center gap-3 rounded-xl bg-linear-to-r from-red-600 to-red-700 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-red-600/30 transition-all duration-300 hover:scale-105 hover:shadow-red-600/50"
           >
-            <span>View All Services</span>
+            <span>All Services</span>
             <RiArrowRightLine className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
 
-          <p className="text-xs text-neutral-500">
+          {/* <p className="text-xs text-neutral-500">
             {services.length}+ specialized services available • Call us 24/7 for immediate assistance
-          </p>
+          </p> */}
         </div>
       </div>
     </section>
