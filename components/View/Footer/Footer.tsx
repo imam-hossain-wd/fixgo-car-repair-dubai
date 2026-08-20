@@ -24,6 +24,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { SiteConfig } from "@/config/siteConfig";
 import { brandLogo } from "@/utils/assets";
+import { getServicesNameSlug } from "@/utils/getServiceNameSlug";
 
 
 const Footer = () => {
@@ -43,7 +44,7 @@ const Footer = () => {
     serviceAreas,
     operatingHours,
     GMB,
-    services,
+    // services,
   } = SiteConfig;
 
   // Quick links from navItems (excluding Home and Blog)
@@ -53,7 +54,7 @@ const Footer = () => {
   const quickLinks = navItems.filter(item => item.name !== "Home" && item.name !== "Blog");
 
   // Popular services (first 6 from services)
-
+const services = getServicesNameSlug()
 
   return (
     <footer className="relative overflow-hidden bg-neutral-950 border-t border-white/5">
@@ -190,15 +191,23 @@ const Footer = () => {
             </h3>
             <ul className="mt-4 space-y-2.5">
               {serviceAreas.map((area) => (
-                <li key={area.slug}>
-                  <Link
-                    href={`/area-we-serve/${area.slug}`}
+                <div key={area.slug}>
+                  <p
                     className="group flex items-center gap-2 text-sm text-neutral-400 transition-colors hover:text-white"
                   >
                     <RiBuildingLine className="h-3 w-3 transition-colors group-hover:text-red-400" />
                     <span>{area.name}</span>
-                  </Link>
-                </li>
+                  </p>
+                </div>
+                // <li key={area.slug}>
+                //   <Link
+                //     href={`/area-we-serve/${area.slug}`}
+                //     className="group flex items-center gap-2 text-sm text-neutral-400 transition-colors hover:text-white"
+                //   >
+                //     <RiBuildingLine className="h-3 w-3 transition-colors group-hover:text-red-400" />
+                //     <span>{area.name}</span>
+                //   </Link>
+                // </li>
               ))}
             </ul>
           </div>

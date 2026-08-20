@@ -5,7 +5,6 @@ import { SiteConfig } from "@/config/siteConfig";
 import {
   RiWhatsappLine,
   RiPhoneLine,
-  RiArrowRightLine,
   RiShieldCheckLine,
   RiTimeLine,
   RiStarLine,
