@@ -1,12 +1,11 @@
 import { SiteConfig } from "@/config/siteConfig";
 
 export const siteMetadata = {
-  // 1. Root / Home Page (/) - Core Brand & Local Hub Intent
   home: {
     title: `24/7 Mobile Car Repair Dubai | 5-15 Min Response | ${SiteConfig.brandName}`,
     description: `Stranded in Dubai? ${SiteConfig.brandName} brings 24/7 certified mobile mechanics to your location in 5–15 mins for battery replacement, jump starts, AC repair & diagnostics. Call ${SiteConfig.displayNumber}!`,
     verification: {
-      google: "", // Add Google Search Console verification token here
+      google: "C8dKQPMHKO9WQWo5gAVg-QIToDXuaLsA_F1gbc2Tbmc",
     },
     alternates: {
       canonical: SiteConfig.url,

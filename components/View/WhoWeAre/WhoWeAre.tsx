@@ -105,7 +105,7 @@ const WhoWeAre = () => {
             <div className="rounded-2xl border border-white/5 bg-white/5 p-6 backdrop-blur-sm">
               <p className="text-[15px] leading-relaxed text-neutral-300">
                 <span className="font-semibold text-red-400">Founded in 2020</span>,
-                FixGo Car Repair Dubai was built to solve a fundamental problem for
+                AutoFix Car Repair Mobile Mechanic Dubai was built to solve a fundamental problem for
                 motorists in the UAE: the delay, expense, and stress of traditional
                 auto workshops. As a top-rated, 24/7 mobile car repair service, we
                 operate as a fully equipped garage on wheels, bringing certified

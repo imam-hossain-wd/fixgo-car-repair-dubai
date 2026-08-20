@@ -5,6 +5,9 @@ import { cn } from "@/lib/utils";
 import Navbar from "@/components/Shared/Navbar/Navbar";
 import Footer from "@/components/View/Footer/Footer";
 import FloatingButton from "@/components/Shared/FloatingButton/FloatingButton";
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const notoSerif = Noto_Serif({ subsets: ['latin'], variable: '--font-serif' });
 
@@ -20,11 +23,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "FixGo Car Repair Dubai | Onsite Auto Repair Services",
-  description: "FixGo car repair dubai provide 24/7 professional onsite mobile car repair and mechanical service anywhere in dubai",
-};
-
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
@@ -32,12 +30,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, inter.variable, "font-serif", notoSerif.variable)}
     >
       <main>
+        <Analytics />
+        <SpeedInsights />
         <Navbar />
         <FloatingButton />
         <body className="min-h-full flex flex-col">
           {children}
         </body>
         <Footer />
+      <GoogleTagManager gtmId="G-1KP4X3KGZC" />
       </main>
     </html>
   );

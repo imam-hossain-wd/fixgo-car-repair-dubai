@@ -62,10 +62,10 @@ const Navbar = () => {
                         {/* Logo */}
                         <Link
                             href="/"
-                            className="flex items-center gap-2 font-serif text-2xl font-bold text-white bg-white px-4 py-1 transition-colors hover:text-red-400 lg:text-3xl"
+                            className="flex items-center gap-2 font-serif text-2xl font-bold text-white bg-white px-4 py-0.5 transition-colors hover:text-red-400 lg:text-3xl"
                         >
                             {/* Fix<span className="text-red-500">Go</span> */}
-                              <Image  width={110} height={110} quality={75} src={brandLogo?.logo} alt="fix go car repair logo"/>
+                              <Image  width={100} height={90} quality={75} src={brandLogo?.logo} alt="fix go car repair logo"/>
                             {/* <span className="hidden text-sm font-sans font-medium text-neutral-400 lg:inline-block">
                                 Car Repair Dubai
                             </span> */}
@@ -122,9 +122,8 @@ const Navbar = () => {
                                 className="inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-red-600/30 transition-all duration-300 hover:scale-105"
                                 aria-label="Call us"
                             >
-                                <span>Call</span>
-                                <span className="hidden text-xs opacity-80 sm:inline">|</span>
-                                <span className="text-xs font-mono sm:inline">
+                               
+                                <span className="text-[12px] font-mono sm:inline">
                                     {displayNumber}
                                 </span>
                             </Link>

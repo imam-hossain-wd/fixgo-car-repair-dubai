@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-orange-600/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid h-auto grid-cols-1 items-center gap-12 lg:grid-cols-2 ">
+        <div className="grid h-auto grid-cols-1 items-center gap-5 md:gap-12 lg:grid-cols-2 ">
           {/* Left Content */}
           <div className="flex flex-col justify-center space-y-8 py-8">
             {/* Trust Badge */}
@@ -59,7 +59,7 @@ const Hero = () => {
                 className="group inline-flex items-center gap-2 rounded-lg bg-linear-to-r from-red-600 to-red-700 px-6 py-4 text-base font-semibold text-white shadow-lg shadow-red-600/30 transition-all duration-300 hover:scale-105 hover:shadow-red-600/50"
               >
                 <RiWhatsappLine className="h-5 w-5" />
-                Get Quick Help
+                Quick Help
                 <RiArrowRightLine className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
 
@@ -100,7 +100,7 @@ const Hero = () => {
             </div> */}
 
             {/* Service Area Tags */}
-            <div className="flex flex-wrap gap-2">
+            {/* <div className="flex flex-wrap gap-2">
               {["Dubailand", "Business Bay", "Downtown Dubai", "JVC", "Al Barsha"].map(
                 (area) => (
                   <span
@@ -111,7 +111,7 @@ const Hero = () => {
                   </span>
                 )
               )}
-            </div>
+            </div> */}
           </div>
 
           {/* Right Content - Visual */}

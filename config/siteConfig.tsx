@@ -1,11 +1,11 @@
 import { RiFacebookCircleFill, RiInstagramFill, RiMailLine, RiMapPinLine, RiPhoneLine, RiPinterestFill, RiYoutubeFill } from "@remixicon/react";
 
 export const SiteConfig = {
-    authorName: "Md Jahangir Alam",
-    brandName: "FixGo Car Repair Dubai",
-    url: "https://www.fixgocarrepair.com",
-    email: "fixgocarrepair@gmail.com",
-    description: "FixGo Car Repair Dubai delivers 24/7 fast, reliable mobile car repair and emergency roadside assistance anywhere in Dubai within 5 to 15 minutes. Our certified mobile mechanics come directly to your home, office, or breakdown location with transparent pricing, advanced diagnostics, and guaranteed work.",
+    authorName: "Md Alamgir",
+    brandName: "AutoFast Mobile Car Repair Dubai",
+    url: "https://www.autofastcarrepairdubai.com/",
+    email: "autofastcarrepair@gmail.com",
+    description: "AutoFast Mobile Car Repair Dubai delivers 24/7 fast, reliable mobile car repair and emergency roadside assistance anywhere in Dubai within 5 to 15 minutes. Our certified mobile mechanics come directly to your home, office, or breakdown location with transparent pricing, advanced diagnostics, and guaranteed work.",
     displayNumber: "+971 54 144 6338",
     ogImage:"/",
     foundedYear:"2020",
@@ -179,16 +179,16 @@ export const SiteConfig = {
     ],
 
     socialLinks: [
-        { name: "Facebook", icon: RiFacebookCircleFill, href: "" },
-        { name: "Instagram", icon: RiInstagramFill, href: "" },
-        { name: "Pinterest", icon: RiPinterestFill, href: "" },
-        { name: "YouTube", icon: RiYoutubeFill, href: "" }
+        { name: "Facebook", icon: RiFacebookCircleFill, href: "https://www.facebook.com/autofixcarrepairdubai/" },
+        { name: "Instagram", icon: RiInstagramFill, href: "https://www.instagram.com/autofixcarrepairdubai/" },
+        { name: "Pinterest", icon: RiPinterestFill, href: "https://www.pinterest.com/fixgocarrepair/" },
+        { name: "YouTube", icon: RiYoutubeFill, href: "https://www.youtube.com/@autofixcarrepairdubai" }
     ],
 
     contactLinks: [
         { name: "Map", icon: RiMapPinLine, href: "" },
         { name: "Phone", icon: RiPhoneLine, href: "tel:+" },
-        { name: "Email", icon: RiMailLine, href: "mailto:fixgocarrepair@gmail.com" }
+        { name: "Email", icon: RiMailLine, href: "mailto:autofixcarrepair@gmail.com" }
     ]
 };
 
