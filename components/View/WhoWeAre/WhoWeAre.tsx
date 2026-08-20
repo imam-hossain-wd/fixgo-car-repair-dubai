@@ -96,11 +96,11 @@ const WhoWeAre = () => {
         {/* Content Grid */}
         <div className="mt-10 grid gap-5 lg:grid-cols-2 lg:gap-10">
           {/* Left Column - Text Content */}
-          <div className="flex flex-col justify-center space-y-6">
+          <div className="flex flex-col justify-center space-y-4">
             {/* Main Story */}
             <div className="rounded-2xl border border-white/5 bg-white/5 p-6 backdrop-blur-sm">
               <p className="text-[15px] leading-relaxed text-neutral-300">
-                <span className="font-semibold text-red-400">Founded in 2020, </span>
+           
                 {/* AutoFix Car Repair Mobile Mechanic Dubai was built to solve a fundamental problem for
                 motorists in the UAE: the delay, expense, and stress of traditional
                 auto workshops. As a top-rated, 24/7 mobile car repair service, we
@@ -108,21 +108,29 @@ const WhoWeAre = () => {
                 auto mechanics directly to your exact location—whether you are
                 stranded on the highway, parked at your office, or sitting at home. */}
 
-                   AutoFast Car Repair Mobile Mechanic was built to solve a problem every Dubai driver knows well: the time, expense, and stress of traditional auto workshops. As a top-rated, 24/7 mobile car repair service, we operate as a fully equipped garage on wheels, sending certified mechanics directly to your exact location whether you're stranded on the highway, parked at the office, or waiting at home.
+                {/* AutoFast Car Repair Mobile Mechanic was built to solve a problem every Dubai driver knows well: the time, expense, and stress of traditional auto workshops. As a top-rated, 24/7 mobile car repair service, we operate as a fully equipped garage on wheels, sending certified mechanics directly to your exact location whether you're stranded on the highway, parked at the office, or waiting at home. */}
+
+                AutoFast Car Repair Mobile Mechanic is a 24/7 mobile car repair service bringing certified technicians directly to drivers across Dubai. Instead of towing your vehicle to a workshop, our fully equipped mobile mechanics come to your home, office, or roadside location, typically arriving within 5 to 15 minutes.
+
+                We handle a wide range of services on the spot, including battery replacement, jump-starts, computer diagnostics, brake repairs, AC gas refills, and general engine troubleshooting.
               </p>
             </div>
 
             {/* Second Paragraph */}
             <div className="rounded-2xl border border-white/5 bg-white/5 p-6 backdrop-blur-sm">
               <p className="text-[15px] leading-relaxed text-neutral-300">
-                From quick battery replacements and jump starts to advanced computer
+
+                Every job comes with transparent, upfront pricing and no hidden fees or unnecessary upsells.
+
+                Founded in 2020 and based in Wadi Al Safa, we proudly serve Dubailand, Business Bay, Downtown Dubai, Al Quoz, Jumeirah Village Circle, and surrounding areas. Whether it's a routine repair or a roadside emergency, our goal is simple: honest mechanical work, done fast, wherever you are.
+                {/* From quick battery replacements and jump starts to advanced computer
                 diagnostics, AC gas refills, and complex mechanical repairs, our team
                 delivers complete auto care on the spot. Headquartered in{" "}
                 <span className="font-semibold text-white">19A Street Wadi Al Safa</span> and
                 servicing every major district including Dubailand, Business Bay,
                 Downtown Dubai, and Jumeirah Village Circle FixGo guarantees a rapid{" "}
                 <span className="font-semibold text-red-400">5 to 15 minute</span>{" "}
-                response time.
+                response time. */}
               </p>
             </div>
 

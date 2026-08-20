@@ -68,10 +68,10 @@ const services = getServicesNameSlug()
         {/* Main Footer Content */}
         <div className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: Brand Info */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             {/* Logo/Brand */}
             <Link href="/" className="inline-block bg-white px-6 py-2 ">
-                <Image  width={180} height={180} quality={75} src={brandLogo?.logo} alt="fix go car repair logo"/>
+                <Image className="w-full h-24"  width={180} height={180} quality={75} src={brandLogo?.logo} alt="fix go car repair logo"/>
             </Link>
 
             <p className="text-sm leading-relaxed text-neutral-400">
