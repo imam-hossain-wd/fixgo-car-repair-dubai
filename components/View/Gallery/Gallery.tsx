@@ -192,7 +192,7 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="mt-16 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
           {galleryItems.map((item, index) => (
             <div
               key={item.id}
@@ -249,7 +249,7 @@ const Gallery = () => {
         </div>
 
         {/* View All Button */}
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <button
             onClick={() => {
               // Scroll to first image or implement "load more"
@@ -263,7 +263,7 @@ const Gallery = () => {
               {galleryItems.length} images
             </span>
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* Lightbox */}

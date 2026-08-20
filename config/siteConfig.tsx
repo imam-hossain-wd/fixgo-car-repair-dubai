@@ -3,7 +3,7 @@ import { RiFacebookCircleFill, RiInstagramFill, RiMailLine, RiMapPinLine, RiPhon
 export const SiteConfig = {
     authorName: "Md Alamgir",
     brandName: "AutoFast Car Repair Mobile Mechanic",
-    url: "https://www.autofastcarrepairdubai.com/",
+    url: "https://www.autofastcarrepairdubai.com",
     email: "autofastcarrepair@gmail.com",
     description: "AutoFast Car Repair Mobile Mechanic delivers 24/7 doorstep car repair across Dubai. Certified mechanics, transparent pricing, and a 5–15 minute response time wherever your car breaks down, we come to you.",
     // description: "AutoFast Car Repair Mobile Mechanic delivers 24/7 fast, reliable mobile car repair and emergency roadside assistance anywhere in Dubai within 5 to 15 minutes. Our certified mobile mechanics come directly to your home, office, or breakdown location with transparent pricing, advanced diagnostics, and guaranteed work.",
